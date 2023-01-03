@@ -64,7 +64,13 @@ class DatePickerTitleWidget extends StatelessWidget {
     return Container(
       height: pickerTheme.titleHeight,
       child: OutlinedButton(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+      style: OutlinedButton.styleFrom(
+        shape: StadiumBorder(),
+            side: BorderSide(
+              width: 2,
+              color: Theme.of(context).colorScheme.primary,
+            ),
+        ),
         child: cancelWidget,
         onPressed: () => this.onCancel(),
       ),
@@ -95,8 +101,14 @@ class DatePickerTitleWidget extends StatelessWidget {
 
     return Container(
       height: pickerTheme.titleHeight,
-      child: FlatButton(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+      child: OutlinedButton(
+        shape:  style: OutlinedButton.styleFrom(
+        shape: StadiumBorder(),
+            side: BorderSide(
+              width: 2,
+              color: Theme.of(context).colorScheme.primary,
+            ),
+        ),
         child: confirmWidget,
         onPressed: () => this.onConfirm(),
       ),
