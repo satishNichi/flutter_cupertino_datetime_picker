@@ -20,7 +20,7 @@ const double DATETIME_PICKER_ITEM_HEIGHT = 36.0;
 const TextStyle DATETIME_PICKER_ITEM_TEXT_STYLE =
     const TextStyle(color: Color(0xFF000046), fontSize: 16.0);
 
-class DateTimePickerTheme with DiagnosticableMixin {
+class DateTimePickerTheme with Diagnosticable {
   final cancelDefault = const Text('OK');
 
   /// DateTimePicker theme.
@@ -56,19 +56,19 @@ class DateTimePickerTheme with DiagnosticableMixin {
   final Color backgroundColor;
 
   /// Default cancel widget's [TextStyle].
-  final TextStyle cancelTextStyle;
+  final TextStyle? cancelTextStyle;
 
   /// Default confirm widget's [TextStyle].
-  final TextStyle confirmTextStyle;
+  final TextStyle? confirmTextStyle;
 
   /// Custom cancel [Widget].
-  final Widget cancel;
+  final Widget? cancel;
 
   /// Custom confirm [Widget].
-  final Widget confirm;
+  final Widget? confirm;
 
   /// Custom title [Widget]. If specify a title widget, the cancel and confirm widgets will not display.
-  final Widget title;
+  final Widget? title;
 
   /// Whether display title widget or not. If set false, the default cancel and confirm widgets will not display, but the custom title widget will display if had specified one custom title widget.
   final bool showTitle;

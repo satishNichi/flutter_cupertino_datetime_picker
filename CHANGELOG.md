@@ -1,3 +1,11 @@
+## 2.0.1
+
+- Fix issue 4 https://github.com/ykrank/flutter_cupertino_datetime_picker/issues/4
+
+## 2.0.0
+
+- Support null safety..
+
 ## 1.0.26+2
 
 - Update pt_br language.
