@@ -102,7 +102,7 @@ class DatePickerTitleWidget extends StatelessWidget {
     return Container(
       height: pickerTheme.titleHeight,
       child: OutlinedButton(
-        shape:  style: OutlinedButton.styleFrom(
+        style: OutlinedButton.styleFrom(
         shape: StadiumBorder(),
             side: BorderSide(
               width: 2,
